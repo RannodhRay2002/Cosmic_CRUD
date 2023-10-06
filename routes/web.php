@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -40,7 +41,4 @@ Route::middleware([
 Route::get('redirects','App\Http\Controllers\HomeController@index');
 
 
-Route::get('/logout', function () {
-    Auth::logout();
-    return redirect('/welcome');
-})->name('logout');
+Route::get('/logout',[HomeController::class, 'logout'])->name('logout');

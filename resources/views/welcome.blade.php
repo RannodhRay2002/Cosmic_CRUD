@@ -51,7 +51,7 @@
                     </ul>
                 </div>
                 <div class="content">
-                    <h1>Cosmic Opulence</h1>
+                    <h1>Cosmic Watches</h1>
                     <p>Dive into a timeless cosmos</p>               
                     <div class="banner-btn">
                         

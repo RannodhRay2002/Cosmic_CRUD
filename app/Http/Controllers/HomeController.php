@@ -21,4 +21,11 @@ class HomeController extends Controller
             return view('customer.dashboard');
         }
     }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        return redirect(to:'/');
+    }
 }
